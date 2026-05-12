@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanHue Interiors | Modern Luxury</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #1a1a1a; color: #f4f4f4; }
+        h1, h2 { font-family: 'Playfair Display', serif; }
+        .accent-color { color: #d4af37; } /* Gold/Hue Accent */
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 flex justify-between p-8 mix-blend-difference">
+        <div class="text-2xl font-bold uppercase tracking-tighter">UrbanHue</div>
+        <ul class="flex gap-10 uppercase text-xs tracking-widest pt-2">
+            <li>Portfolio</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="h-screen flex flex-col justify-center items-center text-center px-4">
+        <h1 class="text-6xl md:text-8xl mb-4 opacity-0 transform translate-y-10 transition-all duration-1000 ease-out" id="hero-title">
+            Where City Grit Meets <br><span class="accent-color">High-End Elegance</span>
+        </h1>
+        <p class="text-gray-400 max-w-md">Bespoke interior design for the modern urbanite.</p>
+    </section>
+
+    <!-- Image Grid Section -->
+    <section class="p-10 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="h-96 bg-gray-800 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800" alt="Interior" class="hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+        </div>
+        <div class="h-96 bg-gray-800 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800" alt="Interior" class="hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+        </div>
+    </section>
+
+    <script>
+        // Simple animation trigger on load
+        window.onload = () => {
+            const title = document.getElementById('hero-title');
+            title.style.opacity = "1";
+            title.style.transform = "translateY(0)";
+        }
+    </script>
+</body>
+</html>
